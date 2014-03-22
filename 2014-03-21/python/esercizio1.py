@@ -82,5 +82,5 @@ def floors():
 	second_floor = T(3)(1)(second_floor)
 	#VIEW(second_floor)
 
-	return [second_floor,first_floor]
+	return STRUCT([second_floor,first_floor])
 

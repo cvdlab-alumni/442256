@@ -57,5 +57,7 @@ def facciate():
 	#west
 	facciata_destra = T(1)(-1.5)(R([1,3])(PI/2)(STRUCT([freccia,rettangolo1,rettangolo2,tetto_lat])))
 	#unione facciate 
+	facciata_retro = T(3)(5)(STRUCT([base_facciata_scarna,facciata_superiore_scarna,tetto]))
 
-	return [facciata_principale,facciata_sinistra,facciata_destra]
+	return STRUCT([facciata_principale,facciata_retro,facciata_sinistra,facciata_destra])
+
